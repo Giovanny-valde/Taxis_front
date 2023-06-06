@@ -1,0 +1,34 @@
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+  <p style="color: white"> Cargando... </p>
+</ngx-spinner>
+
+
+<div class="body">
+  <section class="title">
+    <h1>Bienvenido Taxista</h1>
+  </section>
+  <nav class="navegacion">
+    <ul class="menu">
+      <li>
+        <a href="inicio.html">
+          <span class="text-item">Yo</span>
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/">
+          <span class="text-item">Solicitudes</span>
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/historial">
+          <span class="text-item">Historial</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- <app-pedido-pasajero></app-pedido-pasajero> -->
+  <router-outlet></router-outlet>
+  <app-footer-taxista></app-footer-taxista>
+</div>

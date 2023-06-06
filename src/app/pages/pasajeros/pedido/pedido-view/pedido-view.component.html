@@ -1,0 +1,33 @@
+<div class="body">
+  <div class="container">
+    <div class="encamino">
+      <h1>Taxi en camino</h1> <br>
+      <div class="our-team-text">
+        <h3>Datos Entregados</h3>
+        <p *ngIf="pedido.persona.nombre">Nombre: <b>{{pedido.persona.nombre}}</b></p>
+        <p *ngIf="pedido.persona.barrio">Barrio: <b>{{pedido.persona.barrio}}</b></p>
+        <p *ngIf="pedido.persona.direccion">Dirección: <b>{{pedido.persona.direccion}}</b></p>
+        <p *ngIf="pedido.persona.telefono">Celular: <b>{{pedido.persona.telefono}}</b></p>
+      </div>
+
+      <div class="our-team-text" *ngIf="vehiculo">
+        <h3>Datos Taxista</h3>
+        <p >Nombre: <b>{{vehiculo.persona.nombre}}</b></p>
+        <p >Placa: <b>{{vehiculo.placa}}</b></p>
+        <!-- <p >Dirección: <b>{{pedido.persona.direccion}}</b></p>
+        <p >Celular: <b>{{pedido.persona.telefono}}</b></p> -->
+      </div>
+    </div>
+
+    <div class="road">
+      <div class="taxi">
+        <div class="light_beam"></div>
+        <div class="side_mirror"></div>
+        <span>
+          <b></b>
+          <i></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

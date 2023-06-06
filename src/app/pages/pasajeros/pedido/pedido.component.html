@@ -1,0 +1,38 @@
+<div class="container-form">
+  <div class="formulario">
+    <section>
+      <div class="box">
+        <div class="form"><br>
+          <h2>Pide tu Taxi al instante</h2>
+          <form  [formGroup]="form">
+            <div class="inputBox">
+              <button class="check" [ngClass]="{'checked':isBarrio}" (click)="isBarrio = true" >Barrio</button>
+              <button class="check" [ngClass]="{'checked':!isBarrio}" (click)="isBarrio = false" >Conjunto</button>
+              
+              <input type="text" placeholder="Nombre del titular" formControlName="nombre">
+
+              <ng-select ngClass="custom-ng-select"  formControlName="barrio" placeholder="Barrio en el cual te encuentras" *ngIf="isBarrio">
+                <ng-option  *ngFor="let barrio of barrios" [value]="barrio">{{barrio.nombre}}</ng-option>
+              </ng-select>
+
+              <ng-select ngClass="custom-ng-select"  formControlName="barrio"     placeholder="Conjunto en el cual te encuentras"  *ngIf="!isBarrio">
+                <ng-option *ngFor="let conjunto of conjuntos" [value]="conjunto">{{conjunto.nombre}}</ng-option>
+              </ng-select>
+              <!-- <br> -->
+
+              <input type="text"  formControlName="direccion" placeholder="Direccion en la que te encuentras">
+              <input type="text"  formControlName="telefono" placeholder="Celular de contacto">
+              <div class="inputBox">
+                <h5 class="forget">¿Listo para una experiencia increíble? Haz clic en "Pedir" y confirma que estás de
+                  acuerdo con el
+                  <a href="#">manejo seguro de tus datos personales.</a>
+                </h5>
+                <button class="submit" [disabled]="form.invalid" (click)="openModal()"> Pedir </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

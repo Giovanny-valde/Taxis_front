@@ -1,0 +1,169 @@
+  /* ::ng-deep .myCustomModalClass {
+    background: rgb(235,195,52);
+    background: linear-gradient(0deg, rgba(235,195,52,0.45710784313725494) 1%, rgba(193,168,75,0.3786764705882353) 91%);
+  } */
+
+
+.check{
+  margin-left: 7%;
+  margin-bottom: 2%;
+  width: 40%;
+  background: #fff;
+  color: #666;
+  border-radius: 35px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.checked{
+  color: white;
+  background-color: green;
+}
+
+@media (max-width: 767px){
+  .container-form{
+    width: 100%;
+    margin-top: 3%;
+  }
+}
+  
+@media (min-width: 768px) {
+  .container-form{
+    display: flex;
+    justify-content: center;
+    margin-top:1%;
+    margin-bottom: 1%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+}
+
+  
+
+.formulario {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  /* display: flex;
+  justify-content: center; */
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  /* border-top: 2px solid rgba(255, 255, 255, 0.2); */
+
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.form h2 {
+  text-align: center;
+  position: relative;
+  color: #666;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.form .inputBox {
+  width: 100%;
+  margin-top: 20px;
+}
+/* .custom-ng-select {
+
+} */
+/* ng-select , .custom , ng-option{
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  border-radius: 15px; */
+  /* border-radius: 35px;
+  color: #666; */
+/* } */
+
+.form .inputBox input  , .submit , .custom-ng-select{
+  margin-bottom: 10px;
+  width: 100%;
+  /* background: rgba(255, 255, 255, 0.2); */
+  outline: none;
+  padding: 5px 5px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  /* color: #666; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form .inputBox .submit {
+  background: #fff;
+  color: #666;
+  width: 100%;
+  /* max-width: ; */
+  margin-top: 2%;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.forget {
+  color: #666;
+}
+
+
+
+
+
+
+
+
+/* div,
+select {
+  margin: 8px;
+} */
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color: red;
+}
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Elementos Option, cuando se seleccionan */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+

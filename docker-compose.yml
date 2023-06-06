@@ -1,0 +1,14 @@
+version: '3'  
+services:
+  taxi-front:
+    image: taxi-front
+    container_name: taxi-front
+    build: 
+      context: ./
+    ports:  
+    - "80:80"
+    networks:
+    - network_taxi
+networks:
+  network_taxi:
+     external: true

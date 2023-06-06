@@ -1,0 +1,405 @@
+export interface Barrio {
+    nombre: string,
+    codigo_postal : string
+}
+
+export const barrios = {data:
+    [{
+        "nombre": "Centro",
+        "codigo_postal": "410001"
+      },
+      {
+        "nombre": "San Juan",
+        "codigo_postal": "410002"
+      },
+      {
+        "nombre": "San Luis",
+        "codigo_postal": "410003"
+      },
+      {
+        "nombre": "San Francisco",
+        "codigo_postal": "410004"
+      },
+      {
+        "nombre": "San Pedro",
+        "codigo_postal": "410005"
+      },
+      {
+        "nombre": "San Antonio",
+        "codigo_postal": "410006"
+      },
+      {
+        "nombre": "La Libertad",
+        "codigo_postal": "410007"
+      },
+      {
+        "nombre": "Santa Inés",
+        "codigo_postal": "410008"
+      },
+      {
+        "nombre": "Santa Isabel",
+        "codigo_postal": "410009"
+      },
+      {
+        "nombre": "Vegas del Río",
+        "codigo_postal": "410010"
+      },
+      {
+        "nombre": "Altico",
+        "codigo_postal": "410011"
+      },
+      {
+        "nombre": "Belén",
+        "codigo_postal": "410012"
+      },
+      {
+        "nombre": "La Toma",
+        "codigo_postal": "410013"
+      },
+      {
+        "nombre": "La Magdalena",
+        "codigo_postal": "410014"
+      },
+      {
+        "nombre": "El Vergel",
+        "codigo_postal": "410015"
+      },
+      {
+        "nombre": "Brisas de Alameda",
+        "codigo_postal": "410016"
+      },
+      {
+        "nombre": "El Bosque",
+        "codigo_postal": "410017"
+      },
+      {
+        "nombre": "Villa Magdala",
+        "codigo_postal": "410018"
+      },
+      {
+        "nombre": "El Caguán",
+        "codigo_postal": "410019"
+      },
+      {
+        "nombre": "El Triunfo",
+        "codigo_postal": "410020"
+      },
+      {
+        "nombre": "Santa Clara",
+        "codigo_postal": "410021"
+      },
+      {
+        "nombre": "Las Granjas",
+        "codigo_postal": "410022"
+      },
+      {
+        "nombre": "Puerto Nuevo",
+        "codigo_postal": "410023"
+      },
+      {
+        "nombre": "Guillermo Plazas Alcid",
+        "codigo_postal": "410024"
+      },
+      {
+        "nombre": "La Esperanza",
+        "codigo_postal": "410025"
+      },
+      {
+        "nombre": "Alamos del Sur",
+        "codigo_postal": "410026"
+      },
+      {
+        "nombre": "Ciudadela Comfamiliar",
+        "codigo_postal": "410027"
+      },
+      {
+        "nombre": "Villa Nueva",
+        "codigo_postal": "410028"
+      },
+      {
+        "nombre": "Los Laureles",
+        "codigo_postal": "410029"
+      },
+      {
+        "nombre": "La Granja",
+        "codigo_postal": "410030"
+      },
+      {
+        "nombre": "Miraflores",
+        "codigo_postal": "410031"
+      },
+      {
+        "nombre": "Santa Rita",
+        "codigo_postal": "410032"
+      },
+      {
+        "nombre": "La Aurora",
+        "codigo_postal": "410033"
+      },
+      {
+        "nombre": "Los Pinos",
+        "codigo_postal": "410034"
+      },
+      {
+        "nombre": "La Pradera",
+        "codigo_postal": "410035"
+      },
+      {
+        "nombre": "Las Colinas",
+        "codigo_postal": "410036"
+      },
+      {
+        "nombre": "Villa del Prado",
+        "codigo_postal": "410037"
+      },
+      {
+        "nombre": "Los Alpes",
+        "codigo_postal": "410038"
+      },
+      {
+        "nombre": "La Gaitana",
+        "codigo_postal": "410039"
+      },
+      {
+        "nombre": "La Alborada",
+        "codigo_postal": "410040"
+      },
+      {
+        "nombre": "El Jardín",
+        "codigo_postal": "410041"
+      },
+      {
+        "nombre": "El Paraíso",
+        "codigo_postal": "410042"
+      },
+      {
+        "nombre": "San Ignacio",
+        "codigo_postal": "410043"
+      },
+      {
+        "nombre": "La Victoria",
+        "codigo_postal": "410044"
+      },
+      {
+        "nombre": "La Floresta",
+        "codigo_postal": "410045"
+      },
+      {
+        "nombre": "Los Mártires",
+        "codigo_postal": "410046"
+      },
+      {
+        "nombre": "San Rafael",
+        "codigo_postal": "410047"
+      },
+      {
+        "nombre": "El Bosquecito",
+        "codigo_postal": "410048"
+      },
+      {
+        "nombre": "Nápoles",
+        "codigo_postal": "410049"
+      },
+      {
+        "nombre": "El Carmen",
+        "codigo_postal": "410050"
+      },
+      {
+        "nombre": "El Rincón",
+        "codigo_postal": "410051"
+      },
+      {
+        "nombre": "Los Álamos",
+        "codigo_postal": "410052"
+      },
+      {
+        "nombre": "La Independencia",
+        "codigo_postal": "410053"
+      },
+      {
+        "nombre": "Los Comuneros",
+        "codigo_postal": "410054"
+      },
+      {
+        "nombre": "Nuevo Horizonte",
+        "codigo_postal": "410055"
+      },
+      {
+        "nombre": "Las Delicias",
+        "codigo_postal": "410056"
+      },
+      {
+        "nombre": "La Paz",
+        "codigo_postal": "410057"
+      },
+      {
+        "nombre": "San Vicente",
+        "codigo_postal": "410058"
+      },
+      {
+        "nombre": "Ciudad Jardín",
+        "codigo_postal": "410059"
+      },
+      {
+        "nombre": "La Playa",
+        "codigo_postal": "410060"
+      },
+      {
+        "nombre": "Villa San Pedro",
+        "codigo_postal": "410061"
+      },
+      {
+        "nombre": "El Palmar",
+        "codigo_postal": "410062"
+      },
+      {
+        "nombre": "Villa del Río",
+        "codigo_postal": "410063"
+      },
+      {
+        "nombre": "Villa Mercedes",
+        "codigo_postal": "410064"
+      },
+      {
+        "nombre": "Las Brisas",
+        "codigo_postal": "410065"
+      },
+      {
+        "nombre": "Los Pinos del Limonar",
+        "codigo_postal": "410066"
+      },
+      {
+        "nombre": "Ciudadela de los Álamos",
+        "codigo_postal": "410067"
+      },
+      {
+        "nombre": "Nuevo Milenio",
+        "codigo_postal": "410068"
+      },
+      {
+        "nombre": "Villa del Carmen",
+        "codigo_postal": "410069"
+      },
+      {
+        "nombre": "El Prado",
+        "codigo_postal": "410070"
+      },
+      {
+        "nombre": "Villa Valentina",
+        "codigo_postal": "410071"
+      },
+      {
+        "nombre": "Nuestra Señora de los Remedios",
+        "codigo_postal": "410072"
+      },
+      {
+        "nombre": "El Rodeo",
+        "codigo_postal": "410073"
+      },
+      {
+        "nombre": "El Paraíso de los Ángeles",
+        "codigo_postal": "410074"
+      },
+      {
+        "nombre": "San Martín",
+        "codigo_postal": "410075"
+      },
+      {
+        "nombre": "El Bosque de la Música",
+        "codigo_postal": "410076"
+      },
+      {
+        "nombre": "Bosques de Cabañas",
+        "codigo_postal": "410077"
+      },
+      {
+        "nombre": "Ciudadela Villa Olímpica",
+        "codigo_postal": "410078"
+      },
+      {
+        "nombre": "Nuevo Amanecer",
+        "codigo_postal": "410079"
+      },
+      {
+        "nombre": "Villa del Sol",
+        "codigo_postal": "410080"
+      },
+      {
+        "nombre": "Villa Elvira",
+        "codigo_postal": "410081"
+      },
+      {
+        "nombre": "La Hacienda",
+        "codigo_postal": "410082"
+      },
+      {
+        "nombre": "Ciudadela Comfamiliar del Sur",
+        "codigo_postal": "410083"
+      },
+      {
+        "nombre": "Las Acacias",
+        "codigo_postal": "410084"
+      },
+      {
+        "nombre": "Luis Carlos Galán",
+        "codigo_postal": "410085"
+      },
+      {
+        "nombre": "Bosques de María",
+        "codigo_postal": "410086"
+      },
+      {
+        "nombre": "La Esmeralda",
+        "codigo_postal": "410087"
+      },
+      {
+        "nombre": "Villa Marly",
+        "codigo_postal": "410088"
+      },
+      {
+        "nombre": "La Quinta",
+        "codigo_postal": "410089"
+      },
+      {
+        "nombre": "Brisas del Prado",
+        "codigo_postal": "410090"
+      },
+      {
+        "nombre": "Bosques de Alejandría",
+        "codigo_postal": "410091"
+      },
+      {
+        "nombre": "El Edén",
+        "codigo_postal": "410092"
+      },
+      {
+        "nombre": "La Rivera",
+        "codigo_postal": "410093"
+      },
+      {
+        "nombre": "Villa Alejandría",
+        "codigo_postal": "410094"
+      },
+      {
+        "nombre": "El Encanto",
+        "codigo_postal": "410095"
+      },
+      {
+        "nombre": "Villa Colombia",
+        "codigo_postal": "410096"
+      },
+      {
+        "nombre": "Santa Catalina",
+        "codigo_postal": "410097"
+      },
+      {
+        "nombre": "Villa Andrea",
+        "codigo_postal": "410098"
+      },
+      {
+        "nombre": "Los Álamos de San Fernando",
+        "codigo_postal": "410099"
+      }
+    ]
+    
+}

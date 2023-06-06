@@ -1,0 +1,12 @@
+<h3>Historial de recorridos</h3>
+<div class="card-container">
+  <div class="card" *ngFor="let item of pedidos">
+    <h4 *ngIf="item.estado == enumPedidoEstado.Finalizado.id" >Finalizado</h4>
+    <p>Nombre: <b>{{item.persona.nombre}}</b></p>
+    <p>Barrio: <b>{{item.persona.barrio}}</b></p>
+    <p>Dirección: <b>{{item.persona.direccion}}</b></p>
+    <p>Celular: <b>{{item.persona.telefono}}</b></p>
+    <button *ngIf="item.estado == enumPedidoEstado.Aceptado.id" (click)="changeStatusPedido(item , enumPedidoEstado.Cerca.id)">Estoy cerca</button>
+    <button *ngIf="item.estado == enumPedidoEstado.Cerca.id" (click)="changeStatusPedido(item , enumPedidoEstado.Finalizado.id)">Finalizar recorrido</button>
+  </div>
+</div>

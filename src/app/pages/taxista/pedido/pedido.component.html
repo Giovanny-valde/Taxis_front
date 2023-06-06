@@ -1,0 +1,11 @@
+<h3>Mira los recorridos y acepta el que mas te guste</h3>
+<div class="card-container">
+  <div class="card" *ngFor="let item of pedidos">
+    <p>Nombre: <b>{{item.persona.nombre}}</b></p>
+    <p>Barrio o Conjunto: <b>{{item.persona.barrio | uppercase}}</b></p>
+    <!-- <p>Dirección: <b>{{item.persona.direccion}}</b></p> -->
+    <!-- <p>Celular: <b>{{item.persona.telefono}}</b></p> -->
+    
+    <button class="button" (click)="acceptPedido(item)">Aceptar Recorrido</button>
+  </div>
+</div>
