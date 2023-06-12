@@ -64,7 +64,7 @@ export class PedidoPasajeroComponent implements OnInit {
 
     this._pedidoService.saveItem(pedido).subscribe(data =>{
       // 10 SEGUNDOS
-      this.idPedido = data._id
+      this.idPedido = data.id
      
       let modal = this._modalService.open(PedidoViewComponent)
       modal.componentInstance.pedido = pedido

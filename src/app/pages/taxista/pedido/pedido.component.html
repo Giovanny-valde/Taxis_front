@@ -1,11 +1,17 @@
 <h3>Mira los recorridos y acepta el que mas te guste</h3>
+<div *ngIf="!isNotification">
+  <h6> Deseas aceptar notificaciones? </h6>
+  <div class="button-container">
+    <button class="button-noti" (click)="isNotification = true">Aceptar </button>
+    <button class="button-noti" (click)="isNotification = true">Denegar </button>
+  </div>
+</div>
 <div class="card-container">
   <div class="card" *ngFor="let item of pedidos">
-    <p>Nombre: <b>{{item.persona.nombre}}</b></p>
+    <p>Nombre: <b>{{item.persona.nombre | uppercase}}</b></p>
     <p>Barrio o Conjunto: <b>{{item.persona.barrio | uppercase}}</b></p>
     <!-- <p>Dirección: <b>{{item.persona.direccion}}</b></p> -->
     <!-- <p>Celular: <b>{{item.persona.telefono}}</b></p> -->
-    
     <button class="button" (click)="acceptPedido(item)">Aceptar Recorrido</button>
   </div>
 </div>

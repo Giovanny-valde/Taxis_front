@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  HOST: "http://localhost:3000/",
+  // HOST: "http://localhost:3000/",
+  HOST: "https://taxis-back.onrender.com/",
   HOSTWS: "http://localhost:3001/"
 
   // HOST : "https://calentanaback.onrender.com/api"

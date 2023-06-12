@@ -1,17 +1,15 @@
 import { ToastrService } from 'ngx-toastr';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import { EmpleadoService } from 'src/app/_service/empleado.service';
-// import { RutaService } from 'src/app/_service/ruta.service';
+
+
 import { NgxSpinnerService } from "ngx-spinner";
 import { PedidoService } from 'src/app/_service/pedido.service';
 import { Pedido } from 'src/app/_model/pedido.interface';
-import { Observable } from 'rxjs';
 import { EnumPedidoEstado } from 'src/app/_model/enums/pedido.estado.enum';
-import { EnumVehiculoEstado } from 'src/app/_model/enums/vehiculo.estado.enum';
 import { WhatsappService } from 'src/app/_service/whatsapp.service';
 import { VehiculoService } from 'src/app/_service/vehiculo.service';
+import { SocketService,  } from 'src/app/_service/socket.service';
 
 @Component({
   selector: 'app-pedido-taxista',
@@ -22,23 +20,38 @@ export class PedidoTaxistaComponent implements OnInit {
 
   idVehiculo : string
   pedidos: Pedido[];
+  isNotification : boolean 
 
   constructor(
     private _router: Router,
     private _pedidoService : PedidoService,
     private _vehiculoService : VehiculoService,
     private _whatsappService : WhatsappService,
+    private _socketService : SocketService,
     private spinner : NgxSpinnerService,
     private toastr: ToastrService
   ) { }
 
   ngOnInit(): void {
-    this.getPedidos()
+    // this.isNotification = false
+    // console.log(this.isNotification);
+    this.getPedidos()  
+    this._socketService.get().subscribe(data =>{
+      this.pedidos.push(data.response)
+      if(this.isNotification){
+        const audio = new Audio();
+        audio.src = 'assets/timbretimbrecasa.mp3'; // Ruta al archivo de sonido
+        audio.load(); // Carga el archivo de sonido
+        audio.play(); // Reproduce el sonido
+      }
+      // console.log(this.pedidos);
+    })
   }
 
   getPedidos() {
     this.spinner.show();
     this._pedidoService.getItems().subscribe(data => {
+      console.log(data);
       this.pedidos = data
       this.spinner.hide();
     });

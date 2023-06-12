@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  HOST: "http://localhost:3000/",
+  HOST: "https://taxis-back.onrender.com/",
   HOSTWS: "http://localhost:3001/"
 };
